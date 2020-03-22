@@ -1,0 +1,18 @@
+namespace {{MODULE_NAMESPACE}}
+{
+    public static class {{MODULE_NAME}}Configurator
+    {
+        public static I{{MODULE_NAME}}Input ConfigureWith({{MODULE_NAME}}View view)
+        {
+            {{MODULE_NAME}}Interactor interactor = new {{MODULE_NAME}}Interactor();
+            {{MODULE_NAME}}Router router = new {{MODULE_NAME}}Router();
+            {{MODULE_NAME}}Presenter presenter = new {{MODULE_NAME}}Presenter(view, interactor, router);
+
+            view.Output = presenter;
+            interactor.Output = presenter;
+            router.Output = presenter;
+
+            return presenter;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+namespace {{MODULE_NAMESPACE}}
+{
+    public interface I{{MODULE_NAME}}ViewInput
+    {
+        void Initialize();
+    }
+}

@@ -58,3 +58,10 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Uml
+*.DotSettings
+*.iml
+ViperUnity/.idea
+ViperUnity/Library
+ViperUnity/Temp
+*.cache

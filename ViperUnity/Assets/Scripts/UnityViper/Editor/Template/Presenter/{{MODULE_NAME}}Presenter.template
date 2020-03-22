@@ -1,0 +1,39 @@
+namespace {{MODULE_NAMESPACE}}
+{
+    public partial class {{MODULE_NAME}}Presenter : I{{MODULE_NAME}}Input
+    {
+        public readonly I{{MODULE_NAME}}ViewInput View;
+        public readonly I{{MODULE_NAME}}InteractorInput Interactor;
+        public readonly I{{MODULE_NAME}}RouterInput Router;
+
+        public {{MODULE_NAME}}Presenter(I{{MODULE_NAME}}ViewInput view, I{{MODULE_NAME}}InteractorInput interactor, I{{MODULE_NAME}}RouterInput router)
+        {
+            View = view;
+            Interactor = interactor;
+            Router = router;
+        }
+
+        public void ViewIsReady()
+        {
+            View.Initialize();
+        }
+    }
+
+    #region I{{MODULE_NAME}}ViewOutput Implementation
+    public partial class {{MODULE_NAME}}Presenter : I{{MODULE_NAME}}ViewOutput
+    {
+    }
+    #endregion
+
+    #region I{{MODULE_NAME}}InteractorOutput Implementation
+    public partial class {{MODULE_NAME}}Presenter : I{{MODULE_NAME}}InteractorOutput
+    {
+    }
+    #endregion
+
+    #region I{{MODULE_NAME}}RouterOutput Implementation
+    public partial class {{MODULE_NAME}}Presenter : I{{MODULE_NAME}}RouterOutput
+    {
+    }
+    #endregion
+}

@@ -1,0 +1,6 @@
+namespace {{MODULE_NAMESPACE}}
+{
+    public interface I{{MODULE_NAME}}RouterInput
+    {
+    }
+}

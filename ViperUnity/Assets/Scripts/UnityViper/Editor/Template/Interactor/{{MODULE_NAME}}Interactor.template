@@ -1,0 +1,7 @@
+namespace {{MODULE_NAMESPACE}}
+{
+    public class {{MODULE_NAME}}Interactor : I{{MODULE_NAME}}InteractorInput
+    {
+        public I{{MODULE_NAME}}InteractorOutput Output { get; set; }
+    }
+}

@@ -1,0 +1,19 @@
+using UnityEngine;
+
+namespace {{MODULE_NAMESPACE}}
+{
+    public class {{MODULE_NAME}}View : MonoBehaviour, I{{MODULE_NAME}}ViewInput
+    {
+        public I{{MODULE_NAME}}ViewOutput Output { get; set; }
+
+        private void Awake()
+        {
+            Output.ViewIsReady();
+        }
+
+        public void Initialize()
+        {
+            // TODO: Setup initial state of the view
+        }
+    }
+}

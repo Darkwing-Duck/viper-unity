@@ -1,0 +1,7 @@
+namespace {{MODULE_NAMESPACE}}
+{
+    public class {{MODULE_NAME}}Router : I{{MODULE_NAME}}RouterInput
+    {
+        public I{{MODULE_NAME}}RouterOutput Output { get; set; }
+    }
+}
